@@ -1,0 +1,8 @@
+path: D:\anaconda\Projeler\wyseye\chess-pieces-yolo
+test: ./test/images
+train: ./train/images
+val: ./valid/images
+nc: 2  # Sınıf sayısı
+names: 
+  0: white-pawn
+  1: black-pawn
