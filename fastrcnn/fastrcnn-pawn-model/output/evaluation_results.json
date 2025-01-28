@@ -1,0 +1,10 @@
+{
+    "confusion_matrix": [
+        [
+            77
+        ]
+    ],
+    "average_inference_time": 0.7568564074380058,
+    "model_size_mb": 159.79176425933838,
+    "mAP": 0.0
+}
