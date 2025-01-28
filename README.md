@@ -37,7 +37,16 @@ Bu projede kullanılan veri seti:
 
 ### Fast R-CNN
 - Detaylı performans karşılaştırmaları için kullanıldı.
+- Not: Fast R-CNN modelinde yapılan değerlendirme sonucu mAP değeri 0 çıktı. Bu sorunla ilgili çözüm arayışları devam etmektedir.
 
+### FastAPI Uygulaması
+FastAPI ile çalışan bir API sunucusunu başlatmak için şu komutları kullanabilirsiniz:
+-FastAPI uygulamasını başlatmak için şu komutu kullanın:
+```bash
+-uvicorn app_name:app --reload
+```
+http://127.0.0.1:8000 - Uygulamanın çalıştığı adres
+http://127.0.0.1:8000/docs - Swagger arayüzüne erişim
 
 ---
 
