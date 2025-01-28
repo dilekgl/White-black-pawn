@@ -43,7 +43,6 @@ Bu projede kullanılan veri seti:
 
 ## Gereksinimler
 
-Aşağıdaki yazılımların yüklü olduğundan emin olun:
 
 - Python 3.8+
 - PyTorch
@@ -53,52 +52,6 @@ Aşağıdaki yazılımların yüklü olduğundan emin olun:
 - ONNX
 
 
-## Kurulum
-
-1. Depoyu klonlayın:
-   ```bash
-   git clone https://github.com/dilekgl/White-black-pawn.git
-   cd White-black-pawn
-   ```
-
-2. Gereksinimleri yükleyin:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Veri setini hazırlayın:
-   - Veri seti dosyalarını `data/` dizinine yerleştirin.
-   - COCO formatındaki JSON dosyalarının mevcut olduğundan emin olun.
-
----
-
-## Kullanım
-
-### YOLOv8 Eğitimi
-
-YOLOv8'i eğitmek için:
-```bash
-python train.py --model yolov8n.yaml --data data.yaml --epochs 50
-```
-
-YOLOv8 modelini ONNX'e dönüştürmek için:
-```bash
-python export.py --weights best.pt --img-size 640 --format onnx
-```
-
-### Fast R-CNN Eğitimi
-
-Fast R-CNN modelini eğitmek için:
-```bash
-python train_fastrcnn.py --data data.yaml --epochs 50
-```
-
-Modelin performansını değerlendirmek için:
-```bash
-python evaluate_fastrcnn.py --model output/model.pth --data data.yaml
-```
-
----
 
 ## Sonuçlar
 
@@ -107,18 +60,9 @@ Modeller aşağıdaki kriterlere göre karşılaştırılmıştır:
 - Çıkarım Hızı
 - Model Boyutu
 
-Değerlendirme sonuçları `results/` dizininde bulunabilir.
+Değerlendirme sonuçları `output/` dizininde bulunabilir.
 
 ---
 
-## Gelecek Çalışmalar
 
-- Daha hızlı çıkarım için modelleri optimize etme.
-- Daha çeşitli görsellerle veri setini genişletme.
-- En iyi performans gösteren modeli gerçek zamanlı bir uygulama olarak dağıtma.
 
----
-
-## Lisans
-
-Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
