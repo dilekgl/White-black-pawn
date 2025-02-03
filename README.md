@@ -68,6 +68,7 @@ http://127.0.0.1:8000/docs - Swagger arayüzüne erişim
 ## Sonuçlar
 
 ### YOLOv8 Modeli 
+(50.epoch)
 - mAP: 0.75663
 - mAP@50: 0.89377
 - mAP@75: 0.99818
@@ -75,6 +76,7 @@ http://127.0.0.1:8000/docs - Swagger arayüzüne erişim
 - Inference Süresi: 4.96766e-05 (çok hızlı)
 
 ### Faster R-CNN Modeli
+(5.epoch)
 - mAP: 0.7574
 - mAP@50: 1.000
 - mAP@75: 9629 (Bu değer farklı bir ölçüm formatında olabilir.)
