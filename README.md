@@ -85,7 +85,6 @@ http://127.0.0.1:8000/docs - Swagger arayüzüne erişim
 Faster R-CNN, doğruluk açısından üstün bir modeldir. Özellikle mAP ve mAP@50 gibi metriklerde daha iyi performans gösterir. Ancak modelin boyutu ve inferans süresi, daha büyük hesaplama kaynakları gerektirebilir.
 YOLOv8 ise hızlı inferans süresi ve küçük model boyutu ile gerçek zamanlı uygulamalar için tercih edilen bir seçenek olabilir. Ancak doğruluk açısından Faster R-CNN'e göre biraz daha düşük sonuçlar elde edebilir.
 
-Değerlendirme sonuçları `output/` dizininde bulunabilir.
 
 ---
 
